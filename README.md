@@ -5,10 +5,13 @@ This Script wil copy from every game folder (you'll need all your games in the s
 these wil be copied to a new folder in the root of the main directory
 
 so if your games are in c:\renpygames (c:\renpygames\game1, c:\renpygames\game2, etc)
+
 you make a directory for example "_backup"
+
 and edit the renpy-bckup.py to have your folder paths
 
 base_dir = "C:/_share/_game/VN/" # folder where your games are, change to your directory
+
 backup_folder = "_backup" #backup folder !! NO SLASHES !! make shure it exists inside base_dir
 
 run the script : python renpy-bckup.py
