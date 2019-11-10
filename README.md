@@ -10,7 +10,10 @@ you make a directory for example "_backup"
 ```c:\renpygames\_backup ```
 
 
-and edit the ```renpy-bckup.py``` to have your folder paths
+and edit the ```renpy-bckup.py``` to have your folder paths  
+alwayy use forward slashes even on windows -> /  
+when defining your path, the script will handle it ;)
+it is intended to be OS independent thats why.
 ```
 base_dir = "C:/_share/_game/VN/" # folder where your games are, change to your directory
 
@@ -18,7 +21,7 @@ backup_folder = "_backup" #backup folder !! NO SLASHES !! make shure it exists i
 ```
 run the script : ```python renpy-bckup.py```
 
-this wil make a new folder for every game inside _backup with the name of the game
+this wil make a new folder for every game inside _backup with the name of the game,
 inside there are the copies of all the saves for your save keeping
 ```
 Example:  
