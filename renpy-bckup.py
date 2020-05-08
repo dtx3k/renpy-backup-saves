@@ -19,12 +19,12 @@ def copysaves(game):
     if game != '_backup': # Skip backup folder
         if os.path.isdir(Path(src)): #Check if Games folder exists in source, else its likly not renpy
             if os.path.isdir(Path(dest)): # Check is target folder exists else make one
-                print(f"Copying game: " +game)
+                print("Copying game: " + game)
                 copy_tree(src,dest)
             else:
                 print("Create dest dir")
                 os.mkdir(Path(dest)) # make destination folder in backup target
-                print(f"Copying game: " + game)
+                print("Copying game: " + game)
                 copy_tree(src,dest)
         else:
             print(Fore.RED + game + " is problably not an Ren'py Game, Skipping" + Style.RESET_ALL)
