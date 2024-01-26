@@ -4,13 +4,13 @@ from distutils.dir_util import copy_tree
 from pip._vendor.colorama import Fore, Style
 
 # Global Vars
-base_dir = "C:/_share/_game/VN/" # folder where your games are, change to your directory
-backup_folder = "_backup" #backup folder !! NO SLASHES !! make shure it exists inside base_dir
+base_dir = "C:/_Games/VN/" # folder where your games are, change to your directory
+backup_folder = "_backup/" #backup folder !! NO SLASHES !! make shure it exists inside base_dir
 
 ###### dont change save_folder and dest_dir
 save_folder = "/game/saves/" # default folder for most ren'py games
-dest_dir = base_dir + backup_folder + "/" # combine folders and add slash at end
-
+dest_dir = base_dir + backup_folder # combine folders and add slash at end
+gamelist = ""
 # Call function per folder with name
 def copysaves(game):
     dest = dest_dir + game #set path to dest per game
